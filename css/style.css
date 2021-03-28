@@ -15,6 +15,9 @@ body{
   position: relative;
   margin: calc(20vh/2) auto;
   overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px -1px #000;
 }
 
 .slides{
