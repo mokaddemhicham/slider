@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.slider{
+  width: 60%;
+  height: 70vh;
+  position: relative;
+  margin: calc(20vh/2) auto;
+  overflow: hidden;
+}
+
+.slides{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+.slide h1{
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  color: #fff;
+  font-size: 30px;
+}
+.slide h1 span{
+  display: block;
+  color: #ffe600;
+  margin-top: 5px;
+  margin-left: 40px;
+}
+
+.languagesUsed{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.languagesUsed h4{
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+.imgsLang img {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.arrows-nav{
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.arrows-nav .fa-chevron-left{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: .7s;
+  opacity: 0;
+}
+
+.arrows-nav .fa-chevron-right{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: .7s;
+  opacity:0;
+}
+.dots-nav{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 9999;
+}
+.dots-nav span{
+  width: 15px;
+  height: 15px;
+  background-color: #999;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: .7s;
+}
+
+.active{
+  background-color: #fff !important;
+}
